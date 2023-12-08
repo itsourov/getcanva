@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'ShurjoWeb';
+    src: url('/font/ShurjoWeb.woff');
+
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-image: url('http://localhost:8000/images/s.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+
+}
+
+[x-cloak] {
+    display: none !important;
+}
+
+.filepond--panel-root {
+    background-color: rgb(237, 237, 237);
+}
+
+.dark .filepond--panel-root {
+    background-color: #40444a;
+}
+
+.dark .filepond--drop-label {
+
+    color: rgb(206, 206, 206);
+}
+
+.format img {
+    --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    border-radius: 0.25rem;
+}
